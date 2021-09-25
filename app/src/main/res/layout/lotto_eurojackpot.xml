@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+
+        <LinearLayout
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="15dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/back">
+
+            <TextView
+                android:id="@+id/txt_lotto_0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_lotto_box"
+                android:textSize="@dimen/main_text_size"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="15dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/back">
+
+            <TextView
+                android:id="@+id/txt_lotto_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_lotto_box"
+                android:textSize="@dimen/main_text_size"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="15dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/back">
+
+            <TextView
+                android:id="@+id/txt_lotto_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_lotto_box"
+                android:textSize="@dimen/main_text_size"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="15dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/back">
+
+            <TextView
+                android:id="@+id/txt_lotto_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_lotto_box"
+                android:textSize="@dimen/main_text_size"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="15dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/back">
+
+            <TextView
+                android:id="@+id/txt_lotto_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_lotto_box"
+                android:textSize="@dimen/main_text_size"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+
+        <LinearLayout
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="15dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/back">
+
+            <TextView
+                android:id="@+id/txt_lotto_additional_0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_lotto_box"
+                android:textSize="@dimen/main_text_size"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="15dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/back">
+
+            <TextView
+                android:id="@+id/txt_lotto_additional_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_lotto_box"
+                android:textSize="@dimen/main_text_size"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

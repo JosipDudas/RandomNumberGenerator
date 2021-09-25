@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.rng.RngFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.90"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/ll_wrapper_min_max"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:baselineAligned="false">
+
+                    <LinearLayout
+                        android:id="@+id/ll_min"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txt_min"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/txt_min"
+                            android:textAlignment="center"
+                            android:textSize="@dimen/main_text_size"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="8dp"
+                            android:gravity="center_horizontal" />
+
+                        <NumberPicker
+                            android:id="@+id/np_min"
+                            android:theme="@style/NumberPicker"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="2dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginStart="8dp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_max"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txt_max"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/txt_max"
+                            android:textAlignment="center"
+                            android:textSize="@dimen/main_text_size"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="8dp"
+                            android:gravity="center_horizontal" />
+
+                        <NumberPicker
+                            android:id="@+id/np_max"
+                            android:theme="@style/NumberPicker"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="2dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginStart="8dp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_list_size"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_list_size"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/txt_list_size"
+                        android:textAlignment="center"
+                        android:textSize="@dimen/main_text_size"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center_horizontal" />
+
+                    <com.michaelmuenzer.android.scrollablennumberpicker.ScrollableNumberPicker
+                        android:id="@+id/np_list_size"
+                        app:snp_buttonIconLeft="@drawable/ic_baseline_chevron_left_24"
+                        app:snp_buttonIconRight="@drawable/ic_baseline_chevron_right_24"
+                        app:snp_buttonBackgroundTintSelector="@color/black"
+                        app:snp_buttonTouchScaleFactor="0.8"
+                        app:snp_orientation="horizontal"
+                        app:snp_maxValue="100"
+                        app:snp_minValue="1"
+                        app:snp_scrollEnabled="true"
+                        app:snp_updateInterval="1"
+                        app:snp_valueMarginEnd="30dp"
+                        app:snp_valueMarginStart="30dp"
+                        app:snp_value_text_color="@color/primary"
+                        app:snp_value_text_size="@dimen/main_text_size"
+                        app:snp_value_text_appearance="?android:attr/textAppearanceMedium"
+                        app:snp_buttonPaddingBottom="8dp"
+                        app:snp_buttonPaddingLeft="8dp"
+                        app:snp_buttonPaddingRight="8dp"
+                        app:snp_buttonPaddingTop="8dp"
+                        android:layout_height="60dp"
+                        android:layout_width="match_parent" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_duplicate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_exclude_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/txt_duplicate"
+                        android:textAlignment="center"
+                        android:textSize="@dimen/main_text_size"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:gravity="center_horizontal" />
+
+                    <CheckBox
+                        android:id="@+id/cb_duplicate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/primary"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.15"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_generate_random_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="@string/btn_generate"
+                android:textSize="@dimen/main_text_size" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

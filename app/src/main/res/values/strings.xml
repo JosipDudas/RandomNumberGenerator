@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Random Number Generator</string>
+    <string name="tab_rng">RNG</string>
+    <string name="tab_lotto">Lotto</string>
+    <string name="tab_coins">Coins</string>
+    <string name="btn_generate">Generate</string>
+    <string name="btn_play">Play</string>
+    <string name="btn_toss">Toss</string>
+    <string name="txt_min">MIN</string>
+    <string name="txt_max">MAX</string>
+    <string name="txt_list_size">Number of output numbers </string>
+    <string name="txt_list_size_error">Number of output numbers is too big</string>
+    <string name="txt_min_start">0</string>
+    <string name="txt_max_start">10</string>
+    <string name="txt_result">Result</string>
+    <string name="txt_exclude_list">Exclude numbers</string>
+    <string name="txt_duplicate">Duplicate</string>
+    <string name="txt_close">Close</string>
+    <string name="txt_lotto_box">10</string>
+    <string name="txt_flip">Flip</string>
+
+    <string-array name="lotto_array">
+        <item>EuroJackpot</item>
+        <item>Loto7 - CRO</item>
+    </string-array>
+</resources>
